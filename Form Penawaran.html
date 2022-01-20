@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SILOKER</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="css-img/bg.css">
+  <link rel="stylesheet" href="css-img/fieldset.css">
+
+
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-12">
+            <h1 class="text-center">Sistem Informasi Lowongan Kerja NF - SILOKERNF</h1>
+          </div><!-- /.col -->
+          <!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="col-md-9">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="page 1.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page 2.html">Lowongan Baru</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Form Penawaran.html">Isi Loker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Form Mitra.html">Daftar Mitra</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Mitraperusahaan.html">Berita</a>
+              </li>
+          </ul>
+        </div>
+        <div class="input-group-append ">
+          <button type="submit" class="btn btn-sm btn-default">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <input class="form-control form-control-sm btn-sidebar col-md-2" type="search" placeholder="Search" aria-label="Search">  
+        <ul class="navbar-nav mr-auto col-md-1">
+          <li class="nav-item active">
+            <a class="nav-link " href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row border border-dark">
+          <div class="col-md-12">
+            <div class="text-right">
+              <a href="page 1.html">Home</a> >
+              Isi Loker
+            </div>
+            <fieldset class="scheduler-border">
+              <legend class="scheduler-borde w-auto">Isi Penawaran Lowongan Kerja Anda</legend>
+              <form>
+                <div class="form-group row">
+                  <label for="text" class="col-4 col-form-label">Nama Perusahaan/Organisasi :</label> 
+                  <div class="col-8">
+                    <input id="text" name="text" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="select" class="col-4 col-form-label">Bidang Usaha :</label> 
+                  <div class="col-8">
+                    <select id="select" name="select" class="custom-select">
+                      <option value="perbankan">Perbankan</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="textarea" class="col-4 col-form-label">Deskripsi Lowongan :</label> 
+                  <div class="col-8">
+                    <textarea id="textarea" name="textarea" cols="40" rows="3" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="textarea1" class="col-4 col-form-label">Deskripsi Kualifikasi Lowongan :</label> 
+                  <div class="col-8">
+                    <textarea id="textarea1" name="textarea1" cols="40" rows="3" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-4">Kategori Lowongan</label> 
+                  <div class="col-8">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="pragrammer"> 
+                      <label for="radio_0" class="custom-control-label">Pragrammer</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="network"> 
+                      <label for="radio_1" class="custom-control-label">Network & Infrastructure</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="radio" id="radio_2" type="radio" class="custom-control-input" value="analyst"> 
+                      <label for="radio_2" class="custom-control-label">Analyst</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="radio" id="radio_3" type="radio" class="custom-control-input" value="data"> 
+                      <label for="radio_3" class="custom-control-label">Data Science</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text1" class="col-4 col-form-label">Tanggal Dateline :</label> 
+                  <div class="col-8">
+                    <input id="text1" name="text1" type="date" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="number" class="col-4 col-form-label">Kontak Person :</label> 
+                  <div class="col-8">
+                    <input id="number" name="number" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="email" class="col-4 col-form-label">Email :</label> 
+                  <div class="col-8">
+                    <input id="email" name="email" type="email" class="form-control">
+                  </div>
+                </div> 
+                <div class="form-group row">
+                  <div class="offset-4 col-8">
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                    <button name="submit" type="reset" class="btn btn-primary">Reset</button>
+                  </div>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <strong>Develop By Mahasiswa STT-NF @2021</strong>
+  </footer>
+  <!-- Main Footer -->
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
